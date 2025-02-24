@@ -53,6 +53,16 @@
 
 // Задача 4. Написать функцию, которая возвращает большее из двух чисел.
 
+// function myFunc(a, b) {
+//   if (a > b) {
+//     console.log(a);
+//   }else if (a < b) {
+//     console.log(b);
+//   }else{
+//     console.log('числа равны');
+//   }
+// }
+
 
 
 
@@ -63,4 +73,10 @@
 
 // Задача 6. Создать объект с данными пользователя и вывести его имя.
 
+// let obj = {
+//   firstName: 'Arnaz',
+//   lastName: 'Gabbas',
+//   age: 27
+// }
 
+// console.log(obj.firstName)
