@@ -179,79 +179,144 @@ console.log(totalSum);
 
 // 9. Найди первый элемент больше 2 в массиве чисел.
 
+const findNum = numbers.find(num => num > 2);
+
+console.log(findNum);
 
 
 
 // 10. Найди пользователя с именем "Арназ".
 
+const findName = names.find(name => name === 'Arnaz');
+
+console.log(findName);
+
+
+// const startTime = performance.now();
+// for (let i = 0; i > names.length; i++) {
+//   if (names[i] == 'Arnaz') {
+//     console.log('УСпешно');
+//   } else {
+//     console.log('Провал');
+//   }
+// }
+// const endTime = performance.now();
+// const elapsedTime = (endTime - startTime);
 
 
 
 // 11. Найди индекс первого четного числа.
 
+const findIndx = numbers.findIndex(num => num % 2 === 0);
+
+console.log(findIndx);
 
 
 
-// 12. Найди индекс имени длиной больше 4 символов.
+// 12. Найди индекс имени длиной больше 5 символов.
 
+const findBigIndx = names.findIndex(name => name.length > 5)
 
-
+console.log(findBigIndx);
 
 
 // 13. Есть ли хотя бы одно нечетное число?
 
+const findNechet = numbers.some(num => num % 2 != 0);
 
+console.log(findNechet);
 
 
 // 14. Есть ли имя длиной больше 10 символов?
 
+const findBigName = names.some(name => name.length > 10);
 
+console.log(findBigName);
 
 
 // 15. Все ли числа больше 0?
 
+const checkAll = numbers.some(num => num > 0)
+
+console.log(checkAll);
 
 
 
 // 16. Все ли имена начинаются с заглавной буквы?
 
-
+const checkName = names.every(name => name )
 
 
 
 // 17. Отсортируй массив строк по длине слов.
 
+const sorting = names.sort((a, b) => a.length - b.length)
 
-
+console.log(sorting);
 
 // 18. Отсортируй массив объектов по возрастанию id.
 
+const idList = [
+  {
+    id: 3
+  },
 
+  {
+    id: 4
+  },
+
+  {
+    id: 1
+  },
+
+  {
+    id: 2
+  }
+]
+
+const sortID = idList.sort((a, b) => a.id - b.id)
+
+console.log(sortID);
 
 
 // 19. Переверни массив чисел.
 
+const numRev = numbers.reverse()
+
+console.log(numRev);
 
 
 
 // 20. Переверни массив имен.
 
+const nameRev = names.reverse()
 
+console.log(nameRev);
 
 
 // 21. Разверни массив на один уровень вложенности.
 
+const nestedArray = [1, [2, 3], [4, [5, 6]], 7, 8];
 
-
+console.log(nestedArray.flat(2))
 
 // 22. Разверни полностью глубоко вложенный массив.
 
 
+const nestedArray2 = [1, [2, [3, 4, [5, 6], 7], 8]];
+
+console.log(nestedArray2.flat(4))
 
 
 // 23. Объедини массив букв в строку без пробелов.
 
+const cars = ["BMW", "Toyota", "Fiat", "Lada"];
 
+console.log(cars.join(""));
 
 
 // 24. Объедини массив чисел через запятую.
+
+const arr1 = ["2", "3", "6", "8"];
+
+console.log(arr1.join(","));
